@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "홍익대 홈페이지 눈뽕 방지",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+			"matches": ["*://www.hongik.ac.kr/*"],
+      "js": ["changeColor.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+		"default_title": "홍익대 홈페이지 눈뽕 방지"
+  }
+}
